@@ -45,7 +45,7 @@ router.delete('/:id', withAuth, async (req, res) => {
       },
     });
     if (!commentData) {
-      res.status(404).json({ message: '404 Blog ID not found' });
+      res.status(400).json({ message: '400 Blog ID not found' });
       return;
     }
     res.status(200).json(commentData);
