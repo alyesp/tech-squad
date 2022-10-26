@@ -5,7 +5,7 @@
 				<h2 class="blogTitle text-uppercase">{{title}}</h2>
 			</div>
 			<div class="col-4">
-				<p class="blogCreate text-right">Created by {{user.username}} on {{format_date date_created}}</p>
+				<p class="blogInput text-right">Post by: {{user.username}} on {{format_date date_created}}</p>
 			</div>
 		</div>
 		<p class="text-center blogDescTwo">{{description}}</p>
@@ -22,7 +22,7 @@
 				rows="2"></textarea>
 			</div>
 			<div class="btnComment p-2">
-				<button class="button btn btn-success" type="submit">Add Comment to post</button>
+				<button class="button btn btn-success" type="submit">Add Comment</button>
 			</div>
 		</form>
 
@@ -36,4 +36,4 @@
 		</div>
 		{{/each}}
 
-		<script src="./public/js/comments.js"></script>
+		<script src="/js/comments.js"></script>
